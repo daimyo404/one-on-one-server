@@ -1,4 +1,4 @@
-export interface User {
+export type Users = {
   name: string;
   token: string;
-}
+};
