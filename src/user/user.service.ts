@@ -2,17 +2,9 @@ import { Injectable } from '@nestjs/common';
 import * as mysql from 'mysql';
 import { Connection } from 'mysql';
 import * as dotenv from 'dotenv';
-import { Users } from './user.interface';
+import { Users, Config } from './user.interface';
 
 dotenv.config();
-
-type Config = {
-  host: string;
-  user: string;
-  password: string;
-  database: string;
-  port: number;
-};
 
 const config: Config = {
   host: process.env.HOST_NAME,
