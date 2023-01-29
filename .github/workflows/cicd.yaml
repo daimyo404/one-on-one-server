@@ -3,7 +3,7 @@ name: cicd_test
 on: [push]
 
 jobs:
-  run-test::
+  run-test:
     runs-on:
       steps:
         - name: echo a string
